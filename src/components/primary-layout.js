@@ -43,7 +43,7 @@ class PrimaryLayout extends Component {
         <Row className="content-row-tab">
             <Col span={5}><LeftSidebar/></Col>
             <Col span={12} offset={1}>
-                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}></div>
+                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}><MainContent/></div>
             </Col>
             <Col span={5} offset={1}><RightSidebar /></Col>
         </Row>
