@@ -1,0 +1,35 @@
+.filters-section {
+}
+
+.filters-title {
+ border-bottom: 1px solid $swatch_5;
+ font-weight: 500 !important;
+ padding-bottom: 40px;
+}
+.filters-sub-title {
+ font-weight: 500 !important;
+ padding-bottom: 30px;
+}
+.left-section-tab {
+  margin-top: 40px;
+}
+.checkbox-custom{
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #5cc770;
+    border-color: #5cc770;
+}
+}
+
+.ant-slider-handle {
+  border: solid 2px #5cc770 !important;
+}
+
+.ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
+  border-color: #5cc770 !important;
+}
+.ant-slider-track {
+  background-color: #5cc770 !important;
+}
+.ant-slider-rail {
+    background-color: $swatch_4  !important;
+}

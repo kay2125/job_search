@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Input, Icon, Row, Col } from 'antd';
 
-import logo from '../images/logo.png';
-
+import logo from '../images/hubstaff_logo.png';
+import MainContent from './main-content';
 //components
 import RightSidebar from './right-sidebar';
 import LeftSidebar from './left-sidebar';
@@ -16,7 +16,7 @@ class PrimaryLayout extends Component {
       <Layout className="layout">
         <Header className="header-class">
           <div className="logo">
-           {/*<img src={logo} /> */}
+           {/*<img className="logo-class" src={logo}  alt="logo"/> */}
           </div>
           <Menu
             theme="light"
@@ -43,7 +43,7 @@ class PrimaryLayout extends Component {
         <Row className="content-row-tab">
             <Col span={5}><LeftSidebar/></Col>
             <Col span={12} offset={1}>
-                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
+                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}></div>
             </Col>
             <Col span={5} offset={1}><RightSidebar /></Col>
         </Row>
