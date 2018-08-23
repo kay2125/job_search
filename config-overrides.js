@@ -1,5 +1,6 @@
 const { injectBabelPlugin } = require('react-app-rewired');
 const rewireLess = require('react-app-rewire-less');
+const rewireSass = require('react-app-rewire-scss');
 
 module.exports = function override(config, env) {
   // do stuff with the webpack config...
@@ -9,7 +10,11 @@ module.exports = function override(config, env) {
     config = rewireLess.withLoaderOptions({
       modifyVars: { "@primary-color": "#6CB1EE",
       "@heading-color": "rgba(0, 0, 0, .85)",              // heading text color
-  "@text-color": "#9EA59C"      },
+      "@text-color": "#9EA59C",
+     },
       javascriptEnabled: true})(config, env);
+
+    config = rewireSass(config, env);
+    
   return config;
 };

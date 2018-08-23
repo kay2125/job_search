@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
-import './App.css';
-
+// import './App.css';
+// "start": "react-app-rewired start",
+// "build": "react-app-rewired build",
+//components
+import PrimaryLayout from './components/primary-layout';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Button type="primary">Button</Button>
+      <div>
+        <PrimaryLayout />
       </div>
     );
   }

@@ -1,0 +1,26 @@
+.search-row{
+  margin : 20px 0px;
+}
+.search-bar {
+  height: 55px !important;
+
+}
+.ant-input-suffix .ant-btn-lg{
+  padding: 0px 35px !important;
+  height:  55px !important;
+}
+.search-bar .ant-input {
+  border: none !important;
+  -webkit-box-shadow: 0px 14px 51px -13px rgba(158,165,156,1);
+-moz-box-shadow: 0px 14px 51px -13px rgba(158,165,156,1);
+box-shadow: 0px 14px 51px -13px rgba(158,165,156,1);
+}
+
+.content-row-tab{
+  margin: 40px 0px;
+}
+
+.footer-custom {
+  height: 350px;
+  background: #9EA59C;
+}

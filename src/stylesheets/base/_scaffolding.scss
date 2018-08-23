@@ -1,0 +1,80 @@
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .page-header-title{
+    h2{
+      color: $primary-color;
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 2px;
+    }
+    .ant-breadcrumb{
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+  .page-header-actions{
+    margin-left: auto;
+    button{
+      margin-left: 16px;
+      span{
+        font-weight: 700;
+      }
+    }
+    a{
+      margin-left: 16px;
+      height: 40px;
+      line-height: 1.5;
+      padding: 8px 32px;
+      font-weight: bold;
+    }
+  }
+}
+
+.table-filter{
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  .table-filter-title{
+    h2{
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 700;
+      margin: 0;
+      color: #354052;
+      span{
+        font-weight: 400;
+        color: #ccd3da;
+        font-size: 15px;
+        margin-left: 0px;
+      }
+    }
+  }
+  .table-filter-search{
+    margin-left: auto;
+  }
+
+}
+.ant-select-lg.table-filter-select{
+  margin-left: 16px;
+  .ant-select-selection--single{
+    height: 36px;
+    .ant-select-selection__rendered{
+      line-height: 36px;
+    }
+    .ant-select-selection-selected-value{
+      font-size: 16px;
+    }
+  }
+}
+
+
+// .ant-table-thead > tr.ant-table-row-hover > td, .ant-table-tbody > tr.ant-table-row-hover > td, .ant-table-thead > tr:hover > td, .ant-table-tbody > tr:hover > td{
+//      background-color: #ffffff !important;
+//      -webkit-box-shadow: 0px 9px 30px 0px rgba(194,202,207,1);
+// -moz-box-shadow: 0px 9px 30px 0px rgba(194,202,207,1);
+// box-shadow: 0px 9px 30px 0px rgba(194,202,207,1);
+// border-left: 4px solid #000000;
+//
+// }
