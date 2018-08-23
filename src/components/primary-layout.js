@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Input, Icon, Row, Col } from 'antd';
 
-import logo from '../images/hubstaff_logo.png';
+import logo from '../images/hublogo.jpg';
 import MainContent from './main-content';
 //components
 import RightSidebar from './right-sidebar';
@@ -15,9 +15,9 @@ class PrimaryLayout extends Component {
     return (
       <Layout className="layout">
         <Header className="header-class">
-          <div className="logo">
-           {/*<img className="logo-class" src={logo}  alt="logo"/> */}
-          </div>
+
+           <img className="logo-class" src={logo}  alt="logo"/>
+        
           <Menu
             theme="light"
             mode="horizontal"
