@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Input, Icon, Row, Col } from 'antd';
-// import '../stylesheets/base/header.css';
-// import '../stylesheets/base/content.css';
+
 import logo from '../images/logo.png';
+
+//components
+import RightSidebar from './right-sidebar';
+import LeftSidebar from './left-sidebar';
+
 const { Header, Content, Footer } = Layout;
 const Search = Input.Search;
 
@@ -37,11 +41,11 @@ class PrimaryLayout extends Component {
             </Col>
         </Row>
         <Row className="content-row-tab">
-            <Col span={5} />
+            <Col span={5}><LeftSidebar/></Col>
             <Col span={12} offset={1}>
                   <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
             </Col>
-            <Col span={5} offset={1} />
+            <Col span={5} offset={1}><RightSidebar /></Col>
         </Row>
         </Content>
         <Footer className="footer-custom swatch_5" style={{ textAlign: 'center' }}>

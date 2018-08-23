@@ -9,12 +9,12 @@ module.exports = function override(config, env) {
     config );
     config = rewireLess.withLoaderOptions({
       modifyVars: { "@primary-color": "#6CB1EE",
-      "@heading-color": "rgba(0, 0, 0, .85)",              // heading text color
-      "@text-color": "#9EA59C",
+      "@heading-color": "#283F54",              // heading text color
+      "@text-color": "#283F54",
      },
       javascriptEnabled: true})(config, env);
 
     config = rewireSass(config, env);
-    
+
   return config;
 };
