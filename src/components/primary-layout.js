@@ -17,7 +17,7 @@ class PrimaryLayout extends Component {
         <Header className="header-class">
 
            <img className="logo-class" src={logo}  alt="logo"/>
-        
+
           <Menu
             theme="light"
             mode="horizontal"
@@ -49,7 +49,27 @@ class PrimaryLayout extends Component {
         </Row>
         </Content>
         <Footer className="footer-custom swatch_5" style={{ textAlign: 'center' }}>
-          Ant Design ©2018 Created by Ant UED
+          <Row>
+              <Col span={4}>
+                    <h3 className="footer-text"> Hubstaff Talent </h3>
+              </Col>
+              <Col span={4} offset={1}>
+                    <h4 className="footer-text"> TALENT </h4>
+                    <ul className="footer-text">
+                    <li> How it works </li>
+                    <li> Why we are free </li>
+                    </ul>
+              </Col>
+              <Col span={4} offset={1}>
+                    <h4 className="footer-text"> HUBSTAFF </h4>
+              </Col>
+              <Col span={4} offset={1}>
+                    <h4 className="footer-text"> SUPPORT </h4>
+              </Col>
+              <Col span={4} offset={1}>
+                    <h4 className="footer-text"> SOCIAL </h4>
+              </Col>
+          </Row>
         </Footer>
       </Layout>
     );
