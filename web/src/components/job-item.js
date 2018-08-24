@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import {Button, Row, Col,Tag,Icon } from 'antd';
-
-
+import { Row, Col,Tag,Icon } from 'antd';
 
 class JobItem extends Component {
-  componentDidMount(){
-    console.log("===",this.props.job_data)
-  }
   render() {
     return (
       <div>
+      {/*looping through the list of jobs fetched as props to display the list of job items */}
           {this.props.job_data.map((val)=>{
             return(
               <Row className="job-item-section">
                       <Col>
-                          <h3>{val.Title} &nbsp; <Tag className="tag-custom" color={val.Status == "hourly" ? "#5cc770" : val.Status == "full-time" ? "#2db7f5" : "#ffd321"}>{val.Status}</Tag>
+                          <h3>{val.Title} &nbsp; <Tag className="tag-custom" color={val.Status === "hourly" ? "#5cc770" : val.Status === "full-time" ? "#2db7f5" : "#ffd321"}>{val.Status}</Tag>
                           <span style={{"float":"right"}}>{val.charge}</span></h3>
 
                               <p><Icon style={{"color" : "#6cb1ee"}} type="database"/>&nbsp;

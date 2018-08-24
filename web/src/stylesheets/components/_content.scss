@@ -4,9 +4,6 @@
 
 .header-class{
   border-bottom: 1px solid $border;
-  /* -webkit-box-shadow: 0px 14px 39px -6px rgba(158,165,156,1);
--moz-box-shadow: 0px 14px 39px -6px rgba(158,165,156,1);
-box-shadow: 0px 14px 39px -6px rgba(158,165,156,1); */
 }
 .nav-class{
   line-height: 62px !important;
@@ -53,4 +50,16 @@ box-shadow: 0px 14px 51px -13px rgba(158,165,156,1);
 }
 .footer-text{
   color: $white-back;
+}
+.footer-sub-text{
+  color: $swatch_4;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  margin-left: 45px;
+  margin-top: 30px;
+}
+
+.footer-li-text{
+  margin-top: 10px;
 }

@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import {Button, Row, Col, Select} from 'antd';
+import { Row, Col, Select} from 'antd';
 import JobItem from './job-item';
-
 const Option = Select.Option;
 
-
 class MainContent extends Component {
-
-
-
   render() {
     return (
       <div>
@@ -31,7 +26,6 @@ class MainContent extends Component {
           </Col>
       </Row>
           <JobItem job_data={this.props.job_data}/>
-
       </div>
     );
   }

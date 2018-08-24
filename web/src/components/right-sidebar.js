@@ -10,7 +10,6 @@ const data = [
     title: 'Senior product designer',
   }
 ];
-
 class RightSidebar extends Component {
   render() {
     return (

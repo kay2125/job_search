@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Layout,Select,Slider,Checkbox, Menu, Input, Icon, Row, Col } from 'antd';
-const Search = Input.Search;
+import { Select,Slider,Checkbox, Row, Col } from 'antd';
 const Option = Select.Option;
 const marks = {
   1: {
@@ -75,7 +74,7 @@ class LeftSidebar extends Component {
                 <p className="checkbox-custom"><Checkbox checked={true}>Include profiles without pay rates</Checkbox></p>
           </Col>
       </Row>
-      
+
       <Row className="left-section-tab">
           <Col>
           <h3 className="filters-sub-title"> <span style={{"float" : "left"}}> Experience level </span>

@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 
 // Styles
 import './stylesheets/style.scss'
-import PrimaryLayout from './components/primary-layout';
 
-// import './index.css';
+//components
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
