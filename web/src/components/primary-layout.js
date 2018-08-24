@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Input, Icon, Row, Col } from 'antd';
+import { Layout, Menu,message, Input, Icon, Row, Col } from 'antd';
 
 import logo from '../images/hublogo.jpg';
 import MainContent from './main-content';
+import request from 'superagent';
+
 //components
 import RightSidebar from './right-sidebar';
 import LeftSidebar from './left-sidebar';
@@ -11,6 +13,30 @@ const { Header, Content, Footer } = Layout;
 const Search = Input.Search;
 
 class PrimaryLayout extends Component {
+  constructor(props){
+   super(props);
+   this.state={
+     job_data:[],
+   }
+ }
+
+ componentDidMount(){
+    var component=this;
+    request
+   .get("http://localhost:3000/Tasks/")
+   .end(function(err,res){
+     if(res.status == 200)
+     {
+       component.setState({
+         job_data:res.body,
+       })
+     }
+     else {
+       message.error("Unable to fetch data. Please try again after sometime")
+     }
+   })
+
+  }
   render() {
     return (
       <Layout className="layout">
@@ -43,7 +69,7 @@ class PrimaryLayout extends Component {
         <Row className="content-row-tab">
             <Col span={5}><LeftSidebar/></Col>
             <Col span={12} offset={1}>
-                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}><MainContent/></div>
+                  <div style={{ background: '#fff', padding: 24, minHeight: 280 }}><MainContent job_data={this.state.job_data}/></div>
             </Col>
             <Col span={5} offset={1}><RightSidebar /></Col>
         </Row>
