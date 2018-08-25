@@ -6,6 +6,5 @@ user:'root',
 password:'admin@123',
 database:'demo'
 
-
 });
 module.exports=connection;

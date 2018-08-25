@@ -1,5 +1,5 @@
 var db=require('../dbconnection');
-
+//querying the database for get api call
 var Task={
 
 getAllTasks:function(callback){

@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Task=require('../models/Task');
-
+//setting up route for task of getting job details
 router.get('/:id?',function(req,res,next){
 
 if(req.params.id){
