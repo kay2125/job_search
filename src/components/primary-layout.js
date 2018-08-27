@@ -49,28 +49,46 @@ class PrimaryLayout extends Component {
         </Row>
         </Content>
         <Footer className="footer-custom swatch_5" style={{ textAlign: 'center' }}>
-          <Row>
-              <Col span={4}>
-                    <h3 className="footer-text"> Hubstaff Talent </h3>
-              </Col>
-              <Col span={4} offset={1}>
-                    <h4 className="footer-text"> TALENT </h4>
-                    <ul className="footer-text">
-                    <li> How it works </li>
-                    <li> Why we are free </li>
-                    </ul>
-              </Col>
-              <Col span={4} offset={1}>
-                    <h4 className="footer-text"> HUBSTAFF </h4>
-              </Col>
-              <Col span={4} offset={1}>
-                    <h4 className="footer-text"> SUPPORT </h4>
-              </Col>
-              <Col span={4} offset={1}>
-                    <h4 className="footer-text"> SOCIAL </h4>
-              </Col>
-          </Row>
-        </Footer>
+            <Row>
+                <Col span={4}>
+                      <h3 className="footer-text"> Hubstaff Talent </h3>
+                </Col>
+                <Col span={4} offset={1}>
+                      <h4 className="footer-text"> TALENT </h4>
+                      <ul className="footer-sub-text">
+                      <li className="footer-li-text"> How it works </li>
+                      <li className="footer-li-text"> Why we are free </li>
+                      <li className="footer-li-text"> Agencies </li>
+                      </ul>
+                </Col>
+                <Col span={4} offset={1}>
+                      <h4 className="footer-text"> HUBSTAFF </h4>
+                      <ul className="footer-sub-text">
+                      <li className="footer-li-text"> About </li>
+                      <li className="footer-li-text"> Time Tracking </li>
+                      <li className="footer-li-text"> Developer </li>
+                      <li className="footer-li-text"> Resources </li>
+                      </ul>
+                </Col>
+                <Col span={4} offset={1}>
+                      <h4 className="footer-text"> SUPPORT </h4>
+                      <ul className="footer-sub-text">
+                      <li className="footer-li-text"> Help </li>
+                      <li className="footer-li-text"> Blog </li>
+                      <li className="footer-li-text"> FAQ </li>
+                      <li className="footer-li-text"> Email Us </li>
+                      <li className="footer-li-text"> Terms </li>
+                      <li className="footer-li-text"> Privacy </li>
+                      </ul>
+                </Col>
+                <Col span={4} offset={1}>
+                      <h4 className="footer-text"> SOCIAL </h4>
+                      <ul className="footer-sub-text">
+                      <li className="footer-li-text"> <Icon style={{fontSize:22}} type="twitter" /> &nbsp;&nbsp;&nbsp; <Icon style={{fontSize:22}} type="facebook" /> &nbsp;&nbsp;&nbsp; <Icon style={{fontSize:22}} type="linkedin" /></li>
+                      </ul>
+                </Col>
+            </Row>
+          </Footer>
       </Layout>
     );
   }
