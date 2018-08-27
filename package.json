@@ -2,11 +2,13 @@
   "name": "job_search",
   "version": "1.0.0",
   "engines": {
-    "node": "10.9.0"
+    "node": "10.9.0",
+    "yarn": "1.9.4"
   },
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "nodemon server.js",
+    "server": "node server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
