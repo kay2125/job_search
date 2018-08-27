@@ -2,7 +2,7 @@
   "name": "job_search",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://job-search-.herokuapp.com/",
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "antd": "^3.8.2",
     "babel-plugin-import": "^1.8.0",

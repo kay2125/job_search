@@ -1,6 +1,9 @@
 {
   "name": "job_search",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.9.0"
+  },
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
