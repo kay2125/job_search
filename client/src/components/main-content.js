@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Row, Col, Select} from 'antd';
+import { Row, Col, Select} from 'antd';
 import JobItem from './job-item';
 const Option = Select.Option;
 
@@ -27,14 +27,7 @@ class MainContent extends Component {
           </h3>
           </Col>
       </Row>
-
-
           <JobItem response= {this.props.response}/>
-          <JobItem />
-          <JobItem />
-          <JobItem />
-          <JobItem />
-          <JobItem />
       </div>
     );
   }

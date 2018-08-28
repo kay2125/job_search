@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Row, Col,Tag,Icon } from 'antd';
+import { Row, Col,Tag,Icon } from 'antd';
 
 
 
@@ -22,7 +22,7 @@ class JobItem extends Component {
                    return(
                        <Row className="job-item-section">
                              <Col>
-                                 <h3>{val.title} &nbsp; <Tag className="tag-custom" color={val.status == "hourly" ? "#5cc770" : val.status === "full-time" ? "#2db7f5" : "#ffd321"}>{val.status}</Tag>
+                                 <h3>{val.title} &nbsp; <Tag className="tag-custom" color={val.status === "hourly" ? "#5cc770" : val.status === "full-time" ? "#2db7f5" : "#ffd321"}>{val.status}</Tag>
                                  <span style={{"float":"right"}}>{val.charge}</span></h3>
 
                                      <p><Icon style={{"color" : "#6cb1ee"}} type="database"/>&nbsp;
