@@ -27,7 +27,9 @@ class MainContent extends Component {
           </h3>
           </Col>
       </Row>
-          <JobItem />
+
+
+          <JobItem response= {this.props.response}/>
           <JobItem />
           <JobItem />
           <JobItem />

@@ -19,10 +19,12 @@ callApi = async () => {
 };
 
   render() {
+    // const data= JSON.parse("{"+this.state.response+"}");
+    const data = this.state.response
     return (
       <div>
-        <PrimaryLayout />
-        <h1 className="App-intro">{this.state.response}</h1>
+        <PrimaryLayout response={this.state.response} />
+        <h1 className="App-intro">{data}</h1>
       </div>
     );
   }
